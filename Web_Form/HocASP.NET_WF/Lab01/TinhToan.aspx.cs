@@ -57,5 +57,13 @@ namespace Lab01
             //Gửi kết quả về client
             TxtKQ.Text = "Thương hai số =" + Kq.ToString();
         }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            txt2.Text = "";
+            TxtKQ.Text = "";
+            txt1.Focus();
+        }
     }
 }
