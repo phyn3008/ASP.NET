@@ -37,6 +37,9 @@
             width: 293px;
             color: cadetblue;
         }
+        .auto-style8 {
+            text-align:center;
+        }
         #ddlBanh{
             margin-left: 30px;
         }
@@ -104,7 +107,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="auto-style8">
                         <asp:Label ID="lbThongTin" runat="server">
                             
                         </asp:Label>

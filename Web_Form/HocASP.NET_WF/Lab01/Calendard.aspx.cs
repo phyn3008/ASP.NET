@@ -11,22 +11,26 @@ namespace Lab01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lbToday.Text = "Hôm nay là ngày: "+ DateTime.Now.ToString("dd/MM/yyyy");
+            //Giờ phút giây thôi ==> sd Today, giờ phú giây ==> sd now
+            if (!IsPostBack)
+            lbToday.Text = "Hôm nay là ngày: "+ DateTime.Today.ToString("dd/MM/yyyy");
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
+            DateTime ngaysinhnhat = Calendar1.SelectedDate;
             string KQ = "Ngày sinh nhật của bạn là ngày: " + Calendar1.SelectedDate.ToString("dd/MM/yyyy") +"<br/>";
-            if(Calendar1.SelectedDate < DateTime.Now)
+            if(Calendar1.SelectedDate < DateTime.Today)
             {
-                int ngay = int.Parse(DateTime.Now.Day.ToString()) - int.Parse(Calendar1.SelectedDate.Day.ToString()); 
-                KQ += "Sinh nhật của bạn đã qua " + ngay.ToString()+ "ngày";
+                KQ += string.Format("Sinh nhật của bạn đã qua {0} ngày", DateTime.Today.Subtract(ngaysinhnhat).Days);
+                //int ngay = int.Parse(DateTime.Now.Day.ToString()) - int.Parse(Calendar1.SelectedDate.Day.ToString()); 
+                //KQ += "Sinh nhật của bạn đã qua " + ngay.ToString()+ "ngày";
             }
-            else if (Calendar1.SelectedDate > DateTime.Now)
+            else if (Calendar1.SelectedDate > DateTime.Today)
             {
-                int ngay = int.Parse(Calendar1.SelectedDate.Day.ToString()) - int.Parse(DateTime.Now.Day.ToString());
-                    
-                KQ += "Còn " + ngay.ToString() + " là đến sinh nhật của bạn";
+                KQ += string.Format("Còn {0} là đến sinh nhật của bạn", ngaysinhnhat.Subtract(DateTime.Today).Days);
+                //int ngay = int.Parse(Calendar1.SelectedDate.Day.ToString()) - int.Parse(DateTime.Now.Day.ToString());                    
+                //KQ += "Còn " + ngay.ToString() + " là đến sinh nhật của bạn";
             }
             else if (Calendar1.SelectedDate == DateTime.Now)
             {

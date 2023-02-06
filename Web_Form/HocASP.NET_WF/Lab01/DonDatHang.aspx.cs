@@ -41,13 +41,58 @@ namespace Lab01
             lbLoi.Text = "";
 
             //XỬ LÝ THÊM NHẬP "-"
-            lstBanh.Items.Add(ddlBanh.SelectedItem.Text + "(" + txtSL.Text + ")");
+            //if (!IsPostBack)
+            //{
+            //    lstBanh.Items.Add(ddlBanh.SelectedItem.Text + "(" + txtSL.Text + ")");
+            //}
+            //foreach (ListItem x in lstBanh.Items)
+            //{
+            //    string[] u = x.Text.Split('(');
+            //    if (u[0] == ddlBanh.SelectedItem.Text)
+            //    {
+            //        int ct = int.Parse(txtSL.Text) + int.Parse(u[1]);
+            //        lstBanh.Items.Remove(x);
+            //        lstBanh.Items.Add(ddlBanh.SelectedItem.Text + "(" + ct + ")");
+            //        return;    
+            //    }
+                
+            //}
+
+
+            //Tìm kiếm để kiểm tra tồn taih
+            int findIndex = Timkiem(ddlBanh.SelectedItem.Text);
+            //Thêm tên bánh và số lượng đặt vào lstbanh
+            if(findIndex ==-1) //Bánh cần thêm không tồn tại trong lstBanh\
+            {
+                lstBanh.Items.Add(ddlBanh.SelectedItem.Text + "(" + txtSL.Text + ")");
+            }
+            else
+            {
+                //cat chuoi
+                string[] sttArr = lstBanh.Items[findIndex].Text.Split(new char[] { '(', ')' });
+                // Cộng dồn
+                int ct = int.Parse(txtSL.Text) + int.Parse(sttArr[1]);
+                // Gán lại
+                lstBanh.Items[findIndex].Text= ddlBanh.SelectedItem.Text + "(" + txtSL.Text + ")";
+            }
             txtSL.Text = "";
+        }
+
+        private int Timkiem(string tenbanh)
+        {
+            int chiso = -1; //chi so tim kiem
+            //duyệt các phân tử trong lstBanh
+            for(int i=0; i < lstBanh.Items.Count; i++)
+            {
+                if (lstBanh.Items[i].Text.StartsWith(tenbanh))
+                chiso = i;
+            }
+            return chiso;
         }
 
         protected void btnxoa_Click(object sender, ImageClickEventArgs e)
         {
-            //duyệt các mục duoc chọn trong lstBanh và xóa
+            //duyệt các mục duoc chọn trong lstBanh và xóa(duyệt từ dưới lên)
             for(int i = lstBanh.Items.Count - 1; i >= 0; i--)
             {
                 if (lstBanh.Items[i].Selected)
@@ -62,21 +107,23 @@ namespace Lab01
         protected void btnIn_Click(object sender, EventArgs e)
         {
             string HD="<p>HÓA ĐƠN ĐẶT HÀNG</p>";
-            HD += "Khách Hàng: " + txtKhachHang.Text + "<br/>";
-            HD += "Địa Chỉ: " + txtDiaChi.Text + "<br/>";
-            HD += "Mã Số Thuế: " + txtMST.Text + "<br/>";
+            HD += "Khách Hàng: <i> " + txtKhachHang.Text + "/<i><br/>";
+            HD += "Địa Chỉ:<i> " + txtDiaChi.Text + "</i><br/>";
+            HD += "Mã Số Thuế:<i> " + txtMST.Text + "</i><br/>";
             HD += "Đặt các loại bánh sau: <br/>";
-            HD += "<table>";
+            HD += "<table border=1 width=100% align=center>" ;
             foreach(ListItem x in lstBanh.Items)
             {
                 string Banh;
-                Banh = "<tr><td>" + x.Text + "</td></tr>";
-                string[] mangchuoi = Banh.Split('(');
+                Banh =  x.Text ;
+                string[] mangchuoi = Banh.Split('(',')');
                 HD += "<tr>";
-                foreach (string chuoidatach in mangchuoi)
-                {
-                    HD += "<td>" + chuoidatach + "</td>";
-                }
+                //foreach (string chuoidatach in mangchuoi)
+                //{
+                //    HD += "<td width=100px>" + chuoidatach + "</td>";
+                //}
+                HD += string.Format("<td>" + mangchuoi[0] + "</td>");
+                HD += string.Format("<td>" + mangchuoi[1] + "</td>");
                 HD += "<tr>";
             }
             HD += "</table>";
