@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DiaDanhDuLich.aspx.cs" Inherits="BaiTapLab_webform.DiaDanhDuLich" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DiaDanhDuLich.aspx.cs" Inherits="Lab01.DiaDanhDuLich" %>
 
 <!DOCTYPE html>
 
@@ -9,9 +9,10 @@
         .auto-style1 {
             width: 700px;
             text-align:center;
+            font-weight:bold;
         }
         .auto-style2 {
-            width: 139px;
+            width: 178px;
         }
     </style>
 </head>
@@ -25,25 +26,26 @@
                 <tr>
                     <td class="auto-style2">Địa danh du lịch</td>
                     <td>
-                        <asp:ListBox ID="lstdiaDanh" runat="server" Width="237px"></asp:ListBox>
+                        <asp:ListBox ID="lstDiaDanh" Rows="6" runat="server" Width="237px" SelectionMode="Multiple">               
+                        </asp:ListBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">Tổng số địa danh</td>
                     <td>
-                        <asp:Label ID="Label1" runat="server"></asp:Label>
+                        <asp:Label ID="lbSoDD" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td>
-                        <asp:Button ID="btnChon" runat="server" Text="Button" />
+                        <asp:Button ID="btnChon" runat="server" Text="Chọn" OnClick="btnChon_Click"/>
                     </td>
                 </tr>
                 <tr>
                     
                     <td colspan="2">
-                        <asp:Label ID="Label2" runat="server"></asp:Label>
+                        <asp:Label ID="lbDiaDanh" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>

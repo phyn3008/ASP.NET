@@ -21,7 +21,7 @@
                 <tr>
                     <td class="auto-style2" style="color:blue; font-weight:bold">Chọn tập tin:</td>
                     <td>
-                        <asp:FileUpload ID="FileUpload" runat="server" />
+                        <asp:FileUpload ID="FileUpload" runat="server"  />
                     </td>
                 </tr>
                 <tr>

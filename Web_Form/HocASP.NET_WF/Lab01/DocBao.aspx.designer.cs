@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BaiTapLab_webform
+namespace Lab01
 {
 
 
@@ -24,22 +24,22 @@ namespace BaiTapLab_webform
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// HyperLink5 control.
+        /// img2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
+        protected global::System.Web.UI.WebControls.Image img2;
 
         /// <summary>
-        /// Image2 control.
+        /// lbDocBao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Label lbDocBao;
 
         /// <summary>
         /// hpl1 control.
@@ -69,12 +69,12 @@ namespace BaiTapLab_webform
         protected global::System.Web.UI.WebControls.HyperLink hpl3;
 
         /// <summary>
-        /// HyperLink4 control.
+        /// hpl4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.HyperLink hpl4;
     }
 }

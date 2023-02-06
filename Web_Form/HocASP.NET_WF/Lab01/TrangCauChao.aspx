@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TrangCauChao.aspx.cs" Inherits="BaiTapLab_webform.TrangCauChao" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TrangCauChao.aspx.cs" Inherits="Lab01.TrangCauChao" %>
 
 <!DOCTYPE html>
 
@@ -17,6 +17,7 @@
         }
         .auto-style4 {
             height: 50px;
+            text-align:center;
         }
     </style>
 </head>
@@ -37,7 +38,7 @@
                 </tr>
                 <tr>
                     <td colspan="3" class="auto-style4" >
-                        <asp:Label ID="lbl3" runat="server"></asp:Label>
+                        <asp:Label ID="lbl3" runat="server" Text="Chào Bạn"></asp:Label>
                     </td>
                 </tr>
             </table>

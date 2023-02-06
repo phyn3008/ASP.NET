@@ -32,7 +32,7 @@ namespace Lab01
                 return;
             }
             int ktra = int.Parse(txtSL.Text);
-            if (ktra < 0)
+            if (ktra <= 0)
             {
                 lbLoi.Text = "Số lượng không thể nhỏ hơn 0";
                 txtSL.Text = "";
@@ -57,6 +57,31 @@ namespace Lab01
                 }
             }
 
+        }
+
+        protected void btnIn_Click(object sender, EventArgs e)
+        {
+            string HD="<p>HÓA ĐƠN ĐẶT HÀNG</p>";
+            HD += "Khách Hàng: " + txtKhachHang.Text + "<br/>";
+            HD += "Địa Chỉ: " + txtDiaChi.Text + "<br/>";
+            HD += "Mã Số Thuế: " + txtMST.Text + "<br/>";
+            HD += "Đặt các loại bánh sau: <br/>";
+            HD += "<table>";
+            foreach(ListItem x in lstBanh.Items)
+            {
+                string Banh;
+                Banh = "<tr><td>" + x.Text + "</td></tr>";
+                string[] mangchuoi = Banh.Split('(');
+                HD += "<tr>";
+                foreach (string chuoidatach in mangchuoi)
+                {
+                    HD += "<td>" + chuoidatach + "</td>";
+                }
+                HD += "<tr>";
+            }
+            HD += "</table>";
+            // gửi về client
+            lbThongTin.Text = HD;
         }
     }
 }

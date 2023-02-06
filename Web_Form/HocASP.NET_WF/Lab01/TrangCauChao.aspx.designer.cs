@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BaiTapLab_webform
+namespace Lab01
 {
 
 

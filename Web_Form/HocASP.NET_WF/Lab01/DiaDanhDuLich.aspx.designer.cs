@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BaiTapLab_webform
+namespace Lab01
 {
 
 
@@ -24,22 +24,22 @@ namespace BaiTapLab_webform
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lstdiaDanh control.
+        /// lstDiaDanh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstdiaDanh;
+        protected global::System.Web.UI.WebControls.ListBox lstDiaDanh;
 
         /// <summary>
-        /// Label1 control.
+        /// lbSoDD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lbSoDD;
 
         /// <summary>
         /// btnChon control.
@@ -51,12 +51,12 @@ namespace BaiTapLab_webform
         protected global::System.Web.UI.WebControls.Button btnChon;
 
         /// <summary>
-        /// Label2 control.
+        /// lbDiaDanh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lbDiaDanh;
     }
 }

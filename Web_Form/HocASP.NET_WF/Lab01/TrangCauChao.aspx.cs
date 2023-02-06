@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BaiTapLab_webform
+namespace Lab01
 {
     public partial class TrangCauChao : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace BaiTapLab_webform
         {
 
             string qt = "<p>Chào bạn <b>" + txt1.Text + " </b></p>";
-            qt += "Chào mừng bạn đến với ";
+            qt += "Chào mừng bạn đến với bộ môn <b> ASP.NET <b/>";
             txt1.Text = "";
             txt1.Focus();
             //trả về cho client

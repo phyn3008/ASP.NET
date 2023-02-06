@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DocBao.aspx.cs" Inherits="BaiTapLab_webform.DocBao" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DocBao.aspx.cs" Inherits="Lab01.DocBao" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,14 @@
         .auto-style1 {
             width: 500px;
         }
+        #img2{
+            float:right;
+            width: 200px;
+            height: 150px;
+        }
+        #hpl5{
+            float:left;
+        }
     </style>
 </head>
 <body>
@@ -17,28 +25,28 @@
             <table align="center" cellpadding="5" cellspacing="3" class="auto-style1">
                 <tr>
                     <td>
-                        <asp:HyperLink ID="HyperLink5" runat="server">Đọc Báo</asp:HyperLink>
-                        <asp:Image ID="Image2" runat="server" />
+                        <asp:Image ID="img2" ImageUrl="~/images/img_DocBao.jpg" runat="server" />
+                        <asp:Label ID="lbDocBao" runat="server" Text="Đọc Báo"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:HyperLink ID="hpl1" runat="server">Tuổi Trẻ</asp:HyperLink>
+                        <asp:HyperLink ID="hpl1" NavigateUrl="https://tuoitre.vn" Target="_blank" runat="server">Tuổi Trẻ</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:HyperLink ID="hpl2" runat="server">Tin Nhanh</asp:HyperLink>
+                        <asp:HyperLink ID="hpl2" NavigateUrl="https://vnexpress.net" Target="_blank" runat="server">Tin Nhanh</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:HyperLink ID="hpl3" runat="server">Thanh Niên</asp:HyperLink>
+                        <asp:HyperLink ID="hpl3" NavigateUrl="https://thanhnien.vn" Target="_blank" runat="server">Thanh Niên</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:HyperLink ID="HyperLink4" runat="server">Người Lao Động</asp:HyperLink>
+                        <asp:HyperLink ID="hpl4" NavigateUrl="https://nld.com.vn" Target="_blank" runat="server">Người Lao Động</asp:HyperLink>
                     </td>
                 </tr>
             </table>

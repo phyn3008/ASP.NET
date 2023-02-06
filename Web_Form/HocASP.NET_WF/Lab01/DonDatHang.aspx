@@ -100,12 +100,14 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <asp:Button ID="btnIn" runat="server" Text="IN HÓA ĐƠN" Width="150px" />
+                        <asp:Button ID="btnIn" runat="server" Text="IN HÓA ĐƠN" Width="150px" OnClick="btnIn_Click" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <asp:Label ID="lbThongTin" runat="server"></asp:Label>
+                        <asp:Label ID="lbThongTin" runat="server">
+                            
+                        </asp:Label>
                     </td>
                 </tr>
             </table>
