@@ -67,15 +67,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Calendard.aspx" />
+    <Content Include="DiaDanhDuLich.aspx" />
+    <Content Include="DocBao.aspx" />
     <Content Include="DonDatHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\icon_thungrac.jpg" />
+    <Content Include="images\img_DocBao.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="Panels.aspx" />
+    <Content Include="SanPham.aspx" />
     <Content Include="ThongTinCaNhan.aspx" />
     <Content Include="TinhToan.aspx" />
+    <Content Include="TrangCauChao.aspx" />
+    <Content Include="UpLoadFile.aspx" />
+    <Content Include="UpLoad_XemTapTin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendard.aspx.cs">
+      <DependentUpon>Calendard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendard.aspx.designer.cs">
+      <DependentUpon>Calendard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiaDanhDuLich.aspx.cs">
+      <DependentUpon>DiaDanhDuLich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiaDanhDuLich.aspx.designer.cs">
+      <DependentUpon>DiaDanhDuLich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocBao.aspx.cs">
+      <DependentUpon>DocBao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocBao.aspx.designer.cs">
+      <DependentUpon>DocBao.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DonDatHang.aspx.cs">
       <DependentUpon>DonDatHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,7 +123,21 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Panels.aspx.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panels.aspx.designer.cs">
+      <DependentUpon>Panels.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPham.aspx.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SanPham.aspx.designer.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinCaNhan.aspx.cs">
       <DependentUpon>ThongTinCaNhan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,6 +151,27 @@
     </Compile>
     <Compile Include="TinhToan.aspx.designer.cs">
       <DependentUpon>TinhToan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangCauChao.aspx.cs">
+      <DependentUpon>TrangCauChao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangCauChao.aspx.designer.cs">
+      <DependentUpon>TrangCauChao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpLoadFile.aspx.cs">
+      <DependentUpon>UpLoadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpLoadFile.aspx.designer.cs">
+      <DependentUpon>UpLoadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpLoad_XemTapTin.aspx.cs">
+      <DependentUpon>UpLoad_XemTapTin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpLoad_XemTapTin.aspx.designer.cs">
+      <DependentUpon>UpLoad_XemTapTin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
