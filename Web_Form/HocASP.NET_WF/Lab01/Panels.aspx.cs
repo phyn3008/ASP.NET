@@ -11,6 +11,18 @@ namespace Lab01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                for(int i=1; i <= 50; i++)
+                {
+                    blNgheNghiep.Items.Add("Nghề Nghiệp Thứ " + i);
+                }
+            }
+            else { //Khi trang đc load lại (PostBack)
+            //Xử lí hiện thị ẩn/ hiện plSoThich, plNgheNghiep theo trạng thái của chkSoThich, chkNgheNghiep
+                plST.Visible = chkST.Checked;
+                plNN.Visible = chkNN.Checked;
+            }
 
         }
     }

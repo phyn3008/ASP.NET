@@ -24,40 +24,40 @@ namespace Lab01
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// MultiView1 control.
+        /// lbtUpLoad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView MultiView1;
+        protected global::System.Web.UI.WebControls.LinkButton lbtUpLoad;
 
         /// <summary>
-        /// View1 control.
+        /// lbtXemTapTin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View View1;
+        protected global::System.Web.UI.WebControls.LinkButton lbtXemTapTin;
 
         /// <summary>
-        /// lkbUpLoad control.
+        /// mtvXemTapTin_Load control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lkbUpLoad;
+        protected global::System.Web.UI.WebControls.MultiView mtvXemTapTin_Load;
 
         /// <summary>
-        /// lkbXemTapTin control.
+        /// mvUpLoad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lkbXemTapTin;
+        protected global::System.Web.UI.WebControls.View mvUpLoad;
 
         /// <summary>
         /// FileUpload1 control.
@@ -78,13 +78,22 @@ namespace Lab01
         protected global::System.Web.UI.WebControls.Button btn;
 
         /// <summary>
-        /// View2 control.
+        /// lbThongBao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View View2;
+        protected global::System.Web.UI.WebControls.Label lbThongBao;
+
+        /// <summary>
+        /// mvXemTapTin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View mvXemTapTin;
 
         /// <summary>
         /// lstTapTin control.
