@@ -1,0 +1,55 @@
+1. Required FieldValidator: Bắt buộc 1 control nào đó phải đc nhaalj liệu
+	sửa properties: 
+-ID: rsv
+-ControlToValidate: chọn giá trị kiểm tra
+-Text: (*)
+-Error Message: (viết câu thông báo ra lỗi bị sai)
+	Lưu ý: Cách khắc phục lỗi Khi sử dụng các điều khiển validation mà không hoạt động (bỏ qua kiểm tra hợp lệ)
+	
+B1:	Vào web.config sau dòng lệnh <system.codedom> nhập dòng lệnh:
+B2: <appSettings>
+		<add key="ValidationSettings:UnobtrusiveValidationMode" value="None"/>
+    </appSettings>
+
+
+2. Compare Validator: điều khiển so sánh, kiểm tra so sánh kiểu
+Thông qua thuộc tính Operator
++ss với giá trị số thực
+-ID: cv..
+-ControlToValidate: giá trị kiểm tra
+-Error Message: Lỗi cần thông báo
+-text: (*)
+-Operate: kiểm tra như thế nào
+-Type: kiểu dữ liệu kiểm tra
+
++ss với giá trị control khác
+-Control to compare là so sanh với giá trị nào khác
+-Operate: kiểm tra như thế nào
+-Type: kiểu dữ liệu kiểm tra
+
++ss giá trị ví dụ lớn hơn 18 tủi
+-valuetocompare: giá trị so sánh
+-type
+-operate
+
+3. RegularExpression validation: kiểm tra giá trị theo mẫu quy định trước: địa chỉ, số đt, mã vùng, cmnd
+-ID: rev..
+-Control
+-ERR
+_Validation Express: dấu ba chấm 
+	EMAIL: chọn font: Email
+	SĐT: 0\d{9} (số đt có 10 số)
+	....(mở bảng nhìn theo)
+
+4. Custom Valudator: tự xây dụng control kiểm tra dành cho ngừi lặp trình
+5. Validation Summary: tổng hợp các lỗi có xảy ra hiển thi ra cho ngừi dùng
++ShowMessageBox: Xuất hiện hộp thoại
++ShowSummary: Xuất hiện trên trang web
+
+6. Range Validator: kiểm tra Gía trị trong khoảng từ min đến max
+-ID
+-ERR
+-MESS
+-Max Value: 
+-Min Value
+-Type

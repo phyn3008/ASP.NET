@@ -76,9 +76,11 @@
     <Content Include="images\img_DocBao.jpg" />
     <Content Include="index.aspx" />
     <Content Include="Panels.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="SanPham.aspx" />
     <Content Include="ThongTinCaNhan.aspx" />
     <Content Include="TinhToan.aspx" />
+    <Content Include="Tinh_Toan%28Validation%29.aspx" />
     <Content Include="TrangCauChao.aspx" />
     <Content Include="UpLoadFile.aspx" />
     <Content Include="UpLoad_XemTapTin.aspx" />
@@ -131,6 +133,13 @@
       <DependentUpon>Panels.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SanPham.aspx.cs">
       <DependentUpon>SanPham.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +160,13 @@
     </Compile>
     <Compile Include="TinhToan.aspx.designer.cs">
       <DependentUpon>TinhToan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tinh_Toan%28Validation%29.aspx.cs">
+      <DependentUpon>Tinh_Toan%28Validation%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tinh_Toan%28Validation%29.aspx.designer.cs">
+      <DependentUpon>Tinh_Toan%28Validation%29.aspx</DependentUpon>
     </Compile>
     <Compile Include="TrangCauChao.aspx.cs">
       <DependentUpon>TrangCauChao.aspx</DependentUpon>

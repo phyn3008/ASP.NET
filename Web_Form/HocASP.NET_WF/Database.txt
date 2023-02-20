@@ -1,0 +1,21 @@
+Muốn tự động tăng giá trị lên ==> Bấm tới fiels đó phần properties
+==> chọn (is Identiny) ==>YES
+
+2. Nếu bị lỗi khi thiết lập quan hệ
+==> Click chuột phải vào database đg lm
+==> Properties ==> Files ==> Ower(Tài khoản) ==> chọn user sa(tài k
+hoản cấp toàn quyền=> OKE
+
+3. Sử dụng control SqlDataSource
+Ở phần design có mũi tên nhỏ trên --> Configure Data..
+-New connection: Chọn SQL Sever
+-Lấy tên Sever trong SQL Sever ( chuột phải sever chọn Properties--> Thẻ name: Copy -->Past vào)
+-Lấy database tương ứng
+-OKE -> Next
+-Mún thêm các câu lệnh như update, delete --> Vào advance >> check vào dấu tích thứ 1
+
+BoundFields: chạy lên hiển thị dạng label, chỉnh sửa thì là textbox
+
+4. Chức năng phân trang
+Với GridView --> Properties --> Allow Paging= true và Page Size: số dòng trong 1 trang
+hoặc viết code
